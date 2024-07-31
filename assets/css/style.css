@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #f7d6bf;
+    --cor-text: #b45a4c;
+    --secao-principal: beige;
+    --text: #262626;
+    --white: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+body {
+    background: var(--cor-fundo);
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#header-navegacao {
+    background: var(--secao-principal);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    z-index: 10;
+    animation: slideIn 1s ease-in-out;
+}
+
+#header-navegacao img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+#header-navegacao nav {
+    display: flex;
+    gap: 20px;
+}
+
+#header-navegacao nav a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+#header-navegacao p {
+    color: var(--cor-text);
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 70px;
+}
+
+#secao-principal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--secao-principal);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.div-principal {
+    width: 100%;
+    margin: 0px 50px;
+    height: auto;
+    text-align: center;
+}
+
+.div-principal img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.text-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.text-principal h1 {
+    font-size: 3rem;
+    color: var(--cor-text);
+}
+
+.text-principal h6 {
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+.text-principal button, .newsletter button {
+    padding: 10px;
+    background: var(--cor-text);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#icones-principal {
+    display: flex;
+    gap: 10px;
+}
+
+#icones-principal a img {
+    width: 30px;
+    height: 30px;
+}
+
+.sobre-img img {
+    width: 100%;
+    height: auto;
+}
+
+.div-sobre {
+    width: 90%;
+    margin: 10px;
+    text-align: center;
+}
+
+#sobre-principal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sobre-text h1 {
+    font-size: 3rem;
+    color: var(--cor-text);
+    font-weight: bold;
+}
+
+.sobre-text p {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+#card-container {
+    width: 100%;
+    text-align: center;
+}
+
+#title-servico {
+    font-size: 2.5rem;
+    color: var(--cor-text);
+    font-weight: bold;
+}
+
+#container-servicos {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    background-color: var(--secao-principal);
+    width: 100%;
+    max-width: 250px;
+    padding: 20px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card-body h3 {
+    color: var(--cor-text);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.card-footer button {
+    padding: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--secao-principal);
+    background: var(--cor-text);
+    cursor: pointer;
+}
+
+#testemunho-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.testemunho {
+    background-color: var(--secao-principal);
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.testemunho-cliente {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.testemunho-nome {
+    font-size: 1.2rem;
+}
+
+.inicio-testemunho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testemunho-img {
+    border-radius: 50%;
+}
+
+.modal-header h1 {
+    padding: 1rem;
+}
+
+#fade, #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: var(--white);
+    width: 90%;
+    max-width: 350px;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-header h2 {
+    color: var(--cor-text);
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    top: 0;
+}
+
+.hide {
+    display: none;
+}
+
+#close-modal {
+    border: none;
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#form h4 {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+#form input,
+.newsletter input {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+}
+
+#form button {
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: var(--cor-text);
+    color: var(--white);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#servicos-form {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+}
+
+.animais, #horario {
+    display: flex;
+    justify-content: space-around;
+}
+
+#horario input {
+    width: 100%;
+    margin: 5px;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-block: 30px;
+    width: 111%;
+    background-color: var(--secao-principal);
+}
+
+#habilidades p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#habilidades p span {
+    font-size: 1.7rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--secao-principal);
+    padding: 20px;
+    width: 100%;
+}
+
+.footer-column {
+    margin: 10px 0;
+}
+
+.footer-column h2 {
+    font-size: 1.2em;
+    margin-top: 30px;
+    color: var(--cor-text);
+}
+
+.footer-column p, .footer-column a {
+    margin: 5px 0;
+    color: var(--text);
+}
+
+.rede-social {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.footer-column p a {
+    text-decoration: none;
+}
+
+#autor {
+    width: 100%;
+    padding-block: 8px;
+    text-align: center;
+    background-color: var(--secao-principal);
+}
+
+#autor p {
+    color: var(--text);
+    font-size: 1rem;
+}
+
+#autor p a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}

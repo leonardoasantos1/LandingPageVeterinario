@@ -1,0 +1,76 @@
+
+
+@media (max-width: 768px) {
+    #header-navegacao {
+        flex-direction: row;
+        padding: 12px;
+    }
+
+    .div-principal img {
+        width: 100%;
+    }
+
+    #header-navegacao p{
+        display: none;
+    }
+
+    #secao-principal {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-principal {
+        align-items: center;
+    }
+
+    #sobre-principal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #testemunho-container {
+        flex-direction: column;
+    }
+
+    .testemunho {
+        width: 90%;
+        max-width: 500px;
+    }
+
+    #habilidades{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-principal h1 {
+        font-size: 1.8rem;
+    }
+    
+    .text-principal h6 {
+        font-size: 1rem;
+    }
+    
+    .sobre-text h1 {
+        font-size: 1.8rem;
+    }
+
+    #title-servico {
+        font-size: 1.5rem;
+    }
+}
